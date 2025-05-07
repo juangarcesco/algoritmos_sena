@@ -1,18 +1,25 @@
-Proceso PotenciasDe2
+Proceso Suma_Multiplos_3
 	
-    Definir potencia Como Entero
-    Definir exponente Como Entero
+    Definir numero Como Entero
+    Definir sumaTotal Como Entero
+    Definir contador Como Entero
 	
-    potencia <- 1
-    exponente <- 0
+    numero <- 3
+    sumaTotal <- 0
+    contador <- 1
 	
-    Escribir "---- Potencias de 2 menores o iguales a 100 ----"
-    Escribir "Exponente", "   Potencia de 2"
+    Escribir "---- Múltiplos de 3 desde 3 hasta 99 ----"
+    Escribir "Iteración", "   Número", "   Suma parcial"
 	
-    Mientras potencia <= 100 Hacer
-        Escribir exponente, "          ", potencia
-        exponente <- exponente + 1
-        potencia <- 2 ^ exponente
+    Mientras numero <= 99 Hacer
+        Escribir contador, "          ", numero, "        ", sumaTotal + numero
+        sumaTotal <- sumaTotal + numero
+        numero <- numero + 3
+        contador <- contador + 1
     FinMientras
 	
+    Escribir ""
+    Escribir "La suma total de los múltiplos de 3 hasta 99 es: ", sumaTotal
+	
 FinProceso
+
