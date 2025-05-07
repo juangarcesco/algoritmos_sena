@@ -1,18 +1,28 @@
-Algoritmo Suma_Multiplos_3
-	Definir numero Como Entero
-	Definir sumaTotal Como Entero
-	Definir contador Como Entero
-	numero <- 3
-	sumaTotal <- 0
-	contador <- 1
-	Escribir '---- M�ltiplos de 3 desde 3 hasta 99 ----'
-	Escribir 'Iteraci�n', '   N�mero', '   Suma parcial'
-	Mientras numero<=99 Hacer
-		Escribir contador, '          ', numero, '        ', sumaTotal+numero
-		sumaTotal <- sumaTotal+numero
-		numero <- numero+3
-		contador <- contador+1
-	FinMientras
-	Escribir ''
-	Escribir 'La suma total de los m�ltiplos de 3 hasta 99 es: ', sumaTotal
+Algoritmo CoincideConSuma
+    Definir num1, num2, num3 Como Entero
+    Definir resultado Como Cadena
+	
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    Escribir "Ingrese el tercer número:"
+    Leer num3
+	
+    Si num1 = num2 + num3 Entonces
+        resultado <- "El primer número (" + ConvertirATexto(num1) + ") es igual a la suma de los otros dos (" + ConvertirATexto(num2) + " + " + ConvertirATexto(num3) + ")."
+    Sino
+        Si num2 = num1 + num3 Entonces
+            resultado <- "El segundo número (" + ConvertirATexto(num2) + ") es igual a la suma de los otros dos (" + ConvertirATexto(num1) + " + " + ConvertirATexto(num3) + ")."
+        Sino
+            Si num3 = num1 + num2 Entonces
+                resultado <- "El tercer número (" + ConvertirATexto(num3) + ") es igual a la suma de los otros dos (" + ConvertirATexto(num1) + " + " + ConvertirATexto(num2) + ")."
+            Sino
+                resultado <- "Ningún número coincide con la suma de los otros dos."
+            FinSi
+        FinSi
+    FinSi
+	
+    Escribir resultado
 FinAlgoritmo
+
