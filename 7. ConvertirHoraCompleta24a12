@@ -1,0 +1,24 @@
+Algoritmo ConvertirHoraCompleta24a12
+	Definir hora24, minutos, hora12 Como Entero
+	Definir periodo Como Cadena
+	Escribir 'Ingrese la hora en formato 24 horas (0 a 23): '
+	Leer hora24
+	Escribir 'Ingrese los minutos (0 a 59): '
+	Leer minutos
+	Si hora24<12 Entonces
+		periodo <- 'a.m.'
+		Si hora24=0 Entonces
+			hora12 <- 12
+		SiNo
+			hora12 <- hora24
+		FinSi
+	SiNo
+		periodo <- 'p.m.'
+		Si hora24=12 Entonces
+			hora12 <- 12
+		SiNo
+			hora12 <- hora24-12
+		FinSi
+	FinSi
+	Escribir 'Hora en formato 12 horas: ', hora12, ':', minutos, ' ', periodo
+FinAlgoritmo

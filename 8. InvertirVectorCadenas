@@ -1,0 +1,22 @@
+Algoritmo InvertirVectorCadenas
+	Definir vectorOriginal Como Cadena
+	Definir vectorInverso Como Cadena
+	Definir i, j Como Entero
+	Dimensionar vectorOriginal(5)
+	Dimensionar vectorInverso(5)
+	Escribir 'Llenado del vector original'
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir 'Ingrese la cadena para el elemento ', i, ':'
+		Leer vectorOriginal[i]
+	FinPara
+	j <- 1
+	Para i<-5 Hasta 1 Con Paso -1 Hacer
+		vectorInverso[j] <- vectorOriginal[i]
+		j <- j+1
+	FinPara
+	Escribir ''
+	Escribir 'Contenido del vector invertido'
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir 'Elemento ', i, ': ', vectorInverso[i]
+	FinPara
+FinAlgoritmo

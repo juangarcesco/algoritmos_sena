@@ -1,0 +1,18 @@
+Algoritmo Suma_Multiplos_3
+	Definir numero Como Entero
+	Definir sumaTotal Como Entero
+	Definir contador Como Entero
+	numero <- 3
+	sumaTotal <- 0
+	contador <- 1
+	Escribir '---- Múltiplos de 3 desde 3 hasta 99 ----'
+	Escribir 'Iteración', '   Número', '   Suma parcial'
+	Mientras numero<=99 Hacer
+		Escribir contador, '          ', numero, '        ', sumaTotal+numero
+		sumaTotal <- sumaTotal+numero
+		numero <- numero+3
+		contador <- contador+1
+	FinMientras
+	Escribir ''
+	Escribir 'La suma total de los múltiplos de 3 hasta 99 es: ', sumaTotal
+FinAlgoritmo

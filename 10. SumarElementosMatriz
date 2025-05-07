@@ -1,0 +1,34 @@
+Algoritmo SumarElementosMatriz
+	Definir matriz Como Entero
+	Definir fila, columna Como Entero
+	Definir sumaFila Como Entero
+	Definir sumaColumna Como Entero
+	Dimensionar matriz(3,4)
+	Escribir '--- Carga de la Matriz 3x4 ---'
+	Para fila<-1 Hasta 3 Con Paso 1 Hacer
+		Para columna<-1 Hasta 4 Con Paso 1 Hacer
+			Escribir 'Ingrese el valor para la posicion [', fila, ',', columna, ']:'
+			Leer matriz[fila,columna]
+		FinPara
+	FinPara
+	Escribir ''
+	Escribir '--- Suma de Elementos por Fila ---'
+	Para fila<-1 Hasta 3 Con Paso 1 Hacer
+		sumaFila <- 0
+		Para columna<-1 Hasta 4 Con Paso 1 Hacer
+			sumaFila <- sumaFila+matriz[fila,columna]
+		FinPara
+		Escribir 'La suma de la Fila ', fila, ' es: ', sumaFila
+	FinPara
+	Escribir ''
+	Escribir '--- Suma de Elementos por Columna ---'
+	Para columna<-1 Hasta 4 Con Paso 1 Hacer
+		sumaColumna <- 0
+		Para fila<-1 Hasta 3 Con Paso 1 Hacer
+			sumaColumna <- sumaColumna+matriz[fila,columna]
+		FinPara
+		Escribir 'La suma de la Columna ', columna, ' es: ', sumaColumna
+	FinPara
+	Escribir ''
+	Escribir '--- Fin del Programa ---'
+FinAlgoritmo

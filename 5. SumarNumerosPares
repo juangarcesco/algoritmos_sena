@@ -1,0 +1,11 @@
+Algoritmo SumarNumerosPares
+	Definir numero, suma Como Entero
+	suma <- 0
+	numero <- 50
+	Escribir '---- Suma de números pares entre 50 y 200 ----'
+	Mientras numero<=200 Hacer
+		suma <- suma+numero
+		numero <- numero+2
+	FinMientras // Incrementar en 2 para obtener el siguiente número par
+	Escribir 'La suma de los números pares entre 50 y 200 es: ', suma
+FinAlgoritmo

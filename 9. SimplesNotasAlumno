@@ -1,0 +1,37 @@
+Algoritmo SimplesNotasAlumno
+	Definir notas Como Real
+	Definir i Como Entero
+	Definir sumaNotas Como Real
+	Definir promedio Como Real
+	Definir notaMaxima Como Real
+	Definir notaMinima Como Real
+	Dimensionar notas(5)
+	sumaNotas <- 0
+	// Inicializamos maximo y minimo con valores fuera del rango 0-10
+	// para asegurar que la primera nota sea asignada
+	notaMaxima <- -1
+	notaMinima <- 11
+	Escribir 'Ingrese las 5 notas del alumno (0-10):'
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir 'Nota ', i, ':'
+		Leer notas[i]
+		sumaNotas <- sumaNotas+notas[i]
+		Si notas[i]>notaMaxima Entonces
+			notaMaxima <- notas[i]
+		FinSi
+		Si notas[i]<notaMinima Entonces
+			notaMinima <- notas[i]
+		FinSi
+	FinPara
+	promedio <- sumaNotas/5
+	Escribir ''
+	Escribir '--- Resultados ---'
+	Escribir 'Notas ingresadas:'
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir '  ', notas[i]
+	FinPara
+	Escribir ''
+	Escribir 'Promedio: ', promedio
+	Escribir 'Nota mas alta: ', notaMaxima
+	Escribir 'Nota mas baja: ', notaMinima
+FinAlgoritmo

@@ -1,0 +1,18 @@
+Proceso PotenciasDe2
+	
+    Definir potencia Como Entero
+    Definir exponente Como Entero
+	
+    potencia <- 1
+    exponente <- 0
+	
+    Escribir "---- Potencias de 2 menores o iguales a 100 ----"
+    Escribir "Exponente", "   Potencia de 2"
+	
+    Mientras potencia <= 100 Hacer
+        Escribir exponente, "          ", potencia
+        exponente <- exponente + 1
+        potencia <- 2 ^ exponente
+    FinMientras
+	
+FinProceso
